@@ -1,8 +1,8 @@
 services:
   backend:
-  cotnainer_name: ct-apps-mikail
+    container_name: ct-apps-mikail
     build: ./app
-    iamge: muhammadmikialj/apps-mikail
+    image: muhammadmikialj/apps-mikail
     restart: always
     ports:
     - "3000:3000"
