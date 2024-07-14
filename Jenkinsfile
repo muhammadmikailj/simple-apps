@@ -36,7 +36,9 @@ pipeline {
 
         stage('Dockerized') {
             steps {
-                echo 'Dockerized'
+                sh '''
+                docker compose build
+                '''
             }
         }
 
