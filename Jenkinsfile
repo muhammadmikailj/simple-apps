@@ -17,7 +17,11 @@ pipeline {
 
         stage('Testing Apps') {
             steps {
-                echo 'Testing Apps'
+                sh'''
+                cd app
+                npm test
+                npm run test :coverage
+                '''
             }
         }
 
